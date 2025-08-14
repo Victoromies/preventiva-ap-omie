@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulário de Testes de Wi-Fi</title>
+    <style>
+        body { font-family: Arial, sans-serif; background-color: #f4f4f9; padding: 20px; }
+        .container { max-width: 900px; margin: 0 auto; background-color: #fff; padding: 30px; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); }
+        h1, h2 { text-align: center; color: #333; }
+        .section { margin-bottom: 25px; border: 1px solid #ddd; padding: 20px; border-radius: 6px; }
+        .section h3 { margin-top: 0; color: #555; border-bottom: 2px solid #eee; padding-bottom: 10px; }
+        .field { margin-bottom: 15px; }
+        label { display: block; margin-bottom: 5px; font-weight: bold; color: #666; }
+        input[type="text"] { width: 100%; padding: 10px; box-sizing: border-box; border: 1px solid #ccc; border-radius: 4px; }
+        .button-container { text-align: center; margin-top: 30px; }
+        button { padding: 12px 25px; font-size: 16px; color: #fff; background-color: #007bff; border: none; border-radius: 5px; cursor: pointer; transition: background-color 0.3s ease; }
+        button:hover { background-color: #0056b3; }
+        #signature-pad { border: 1px solid #000; background-color: #fff; margin-bottom: 10px; cursor: crosshair; }
+        .signature-buttons { display: flex; justify-content: center; gap: 10px; margin-top: 10px; }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Formulário de Testes de Wi-Fi</h1>
+
+        <div class="section">
+            <h2>1º Andar</h2>
+            <h3>AP 1</h3>
+            <div class="field">
+                <label for="a1-ap1-sinal">Sinal Wifi (dbm)</label>
+                <input type="text" id="a1-ap1-sinal" name="a1-ap1-sinal">
+            </div>
+            <div class="field">
+                <label for="a1-ap1-experiencia">Experiência do ususario (1-10)</label>
+                <input type="text" id="a1-ap1-experiencia" name="a1-ap1-experiencia">
+            </div>
+            <div class="field">
+                <label for="a1-ap1-firmware">Versão do firmware</label>
+                <input type="text" id="a1-ap1-firmware" name="a1-ap1-firmware">
+            </div>
+            <hr>
+            <h3>AP 2</h3>
+            <div class="field">
+                <label for="a1-ap2-sinal">Sinal Wifi (dbm)</label>
+                <input type="text" id="a1-ap2-sinal" name="a1-ap2-sinal">
+            </div>
+            <div class="field">
+                <label for="a1-ap2-experiencia">Experiência do ususario (1-10)</label>
+                <input type="text" id="a1-ap2-experiencia" name="a1-ap2-experiencia">
+            </div>
+            <div class="field">
+                <label for="a1-ap2-firmware">Versão do firmware</label>
+                <input type="text" id="a1-ap2-firmware" name="a1-ap2-firmware">
+            </div>
+            <hr>
+            <h3>AP 3</h3>
+            <div class="field">
+                <label for="a1-ap3-sinal">Sinal Wifi (dbm)</label>
+                <input type="text" id="a1-ap3-sinal" name="a1-ap3-sinal">
+            </div>
+            <div class="field">
+                <label for="a1-ap3-experiencia">Experiência do ususario (1-10)</label>
+                <input type="text" id="a1-ap3-experiencia" name="a1-ap3-experiencia">
+            </div>
+            <div class="field">
+                <label for="a1-ap3-firmware">Versão do firmware</label>
+                <input type="text" id="a1-ap3-firmware" name="a1-ap3-firmware">
+            </div>
+            <hr>
+            <h3>AP 4</h3>
+            <div class="field">
+                <label for="a1-ap4-sinal">Sinal Wifi (dbm)</label>
+                <input type="text" id="a1-ap4-sinal" name="a1-ap4-sinal">
+            </div>
+            <div class="field">
+                <label for="a1-ap4-experiencia">Experiência do ususario (1-10)</label>
+                <input type="text" id="a1-ap4-experiencia" name="a1-ap4-experiencia">
+            </div>
+            <div class="field">
+                <label for="a1-ap4-firmware">Versão do firmware</label>
+                <input type="text" id="a1-ap4-firmware" name="a1-ap4-firmware">
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>2º Andar</h2>
+            <h3>AP 1</h3>
+            <div class="field">
+                <label for="a2-ap1-sinal">Sinal Wifi (dbm)</label>
+                <input type="text" id="a2-ap1-sinal" name="a2-ap1-sinal">
+            </div>
+            <div class="field">
+                <label for="a2-ap1-experiencia">Experiência do ususario (1-10)</label>
+                <input type="text" id="a2-ap1-experiencia" name="a2-ap1-experiencia">
+            </div>
+            <div class="field">
+                <label for="a2-ap1-firmware">Versão do firmware</label>
+                <input type="text" id="a2-ap1-firmware" name="a2-ap1-firmware">
+            </div>
+            <hr>
+            <h3>AP 2</h3>
+            <div class="field">
+                <label for="a2-ap2-sinal">Sinal Wifi (dbm)</label>
+                <input type="text" id="a2-ap2-sinal" name="a2-ap2-sinal">
+            </div>
+            <div class="field">
+                <label for="a2-ap2-experiencia">Experiência do ususario (1-10)</label>
+                <input type="text" id="a2-ap2-experiencia" name="a2-ap2-experiencia">
+            </div>
+            <div class="field">
+                <label for="a2-ap2-firmware">Versão do firmware</label>
+                <input type="text" id="a2-ap2-firmware" name="a2-ap2-firmware">
+            </div>
+            <hr>
+            <h3>AP 3</h3>
+            <div class="field">
+                <label for="a2-ap3-sinal">Sinal Wifi (dbm)</label>
+                <input type="text" id="a2-ap3-sinal" name="a2-ap3-sinal">
+            </div>
+            <div class="field">
+                <label for="a2-ap3-experiencia">Experiência do ususario (1-10)</label>
+                <input type="text" id="a2-ap3-experiencia" name="a2-ap3-experiencia">
+            </div>
+            <div class="field">
+                <label for="a2-ap3-firmware">Versão do firmware</label>
+                <input type="text" id="a2-ap3-firmware" name="a2-ap3-firmware">
+            </div>
+            <hr>
+            <h3>AP 4</h3>
+            <div class="field">
+                <label for="a2-ap4-sinal">Sinal Wifi (dbm)</label>
+                <input type="text" id="a2-ap4-sinal" name="a2-ap4-sinal">
+            </div>
+            <div class="field">
+                <label for="a2-ap4-experiencia">Experiência do ususario (1-10)</label>
+                <input type="text" id="a2-ap4-experiencia" name="a2-ap4-experiencia">
+            </div>
+            <div class="field">
+                <label for="a2-ap4-firmware">Versão do firmware</label>
+                <input type="text" id="a2-ap4-firmware" name="a2-ap4-firmware">
+            </div>
+        </div>
+        
+        <div class="section">
+            <h2>3º Andar</h2>
+            <h3>AP 1</h3>
+            <div class="field">
+                <label for="a3-ap1-sinal">Sinal Wifi (dbm)</label>
+                <input type="text" id="a3-ap1-sinal" name="a3-ap1-sinal">
+            </div>
+            <div class="field">
+                <label for="a3-ap1-experiencia">Experiência do ususario (1-10)</label>
+                <input type="text" id="a3-ap1-experiencia" name="a3-ap1-experiencia">
+            </div>
+            <div class="field">
+                <label for="a3-ap1-firmware">Versão do firmware</label>
+                <input type="text" id="a3-ap1-firmware" name="a3-ap1-firmware">
+            </div>
+            <hr>
+            <h3>AP 2</h3>
+            <div class="field">
+                <label for="a3-ap2-sinal">Sinal Wifi (dbm)</label>
+                <input type="text" id="a3-ap2-sinal" name="a3-ap2-sinal">
+            </div>
+            <div class="field">
+                <label for="a3-ap2-experiencia">Experiência do ususario (1-10)</label>
+                <input type="text" id="a3-ap2-experiencia" name="a3-ap2-experiencia">
+            </div>
+            <div class="field">
+                <label for="a3-ap2-firmware">Versão do firmware</label>
+                <input type="text" id="a3-ap2-firmware" name="a3-ap2-firmware">
+            </div>
+            <hr>
+            <h3>AP 3</h3>
+            <div class="field">
+                <label for="a3-ap3-sinal">Sinal Wifi (dbm)</label>
+                <input type="text" id="a3-ap3-sinal" name="a3-ap3-sinal">
+            </div>
+            <div class="field">
+                <label for="a3-ap3-experiencia">Experiência do ususario (1-10)</label>
+                <input type="text" id="a3-ap3-experiencia" name="a3-ap3-experiencia">
+            </div>
+            <div class="field">
+                <label for="a3-ap3-firmware">Versão do firmware</label>
+                <input type="text" id="a3-ap3-firmware" name="a3-ap3-firmware">
+            </div>
+            <hr>
+            <h3>AP 4</h3>
+            <div class="field">
+                <label for="a3-ap4-sinal">Sinal Wifi (dbm)</label>
+                <input type="text" id="a3-ap4-sinal" name="a3-ap4-sinal">
+            </div>
+            <div class="field">
+                <label for="a3-ap4-experiencia">Experiência do ususario (1-10)</label>
+                <input type="text" id="a3-ap4-experiencia" name="a3-ap4-experiencia">
+            </div>
+            <div class="field">
+                <label for="a3-ap4-firmware">Versão do firmware</label>
+                <input type="text" id="a3-ap4-firmware" name="a3-ap4-firmware">
+            </div>
+        </div>
+        
+        <div class="section">
+            <h2>4º Andar</h2>
+            <h3>AP 1</h3>
+            <div class="field">
+                <label for="a4-ap1-sinal">Sinal Wifi (dbm)</label>
+                <input type="text" id="a4-ap1-sinal" name="a4-ap1-sinal">
+            </div>
+            <div class="field">
+                <label for="a4-ap1-experiencia">Experiência do ususario (1-10)</label>
+                <input type="text" id="a4-ap1-experiencia" name="a4-ap1-experiencia">
+            </div>
+            <div class="field">
+                <label for="a4-ap1-firmware">Versão do firmware</label>
+                <input type="text" id="a4-ap1-firmware" name="a4-ap1-firmware">
+            </div>
+            <hr>
+            <h3>AP 2</h3>
+            <div class="field">
+                <label for="a4-ap2-sinal">Sinal Wifi (dbm)</label>
+                <input type="text" id="a4-ap2-sinal" name="a4-ap2-sinal">
+            </div>
+            <div class="field">
+                <label for="a4-ap2-experiencia">Experiência do ususario (1-10)</label>
+                <input type="text" id="a4-ap2-experiencia" name="a4-ap2-experiencia">
+            </div>
+            <div class="field">
+                <label for="a4-ap2-firmware">Versão do firmware</label>
+                <input type="text" id="a4-ap2-firmware" name="a4-ap2-firmware">
+            </div>
+            <hr>
+            <h3>AP 3</h3>
+            <div class="field">
+                <label for="a4-ap3-sinal">Sinal Wifi (dbm)</label>
+                <input type="text" id="a4-ap3-sinal" name="a4-ap3-sinal">
+            </div>
+            <div class="field">
+                <label for="a4-ap3-experiencia">Experiência do ususario (1-10)</label>
+                <input type="text" id="a4-ap3-experiencia" name="a4-ap3-experiencia">
+            </div>
+            <div class="field">
+                <label for="a4-ap3-firmware">Versão do firmware</label>
+                <input type="text" id="a4-ap3-firmware" name="a4-ap3-firmware">
+            </div>
+            <hr>
+            <h3>AP 4</h3>
+            <div class="field">
+                <label for="a4-ap4-sinal">Sinal Wifi (dbm)</label>
+                <input type="text" id="a4-ap4-sinal" name="a4-ap4-sinal">
+            </div>
+            <div class="field">
+                <label for="a4-ap4-experiencia">Experiência do ususario (1-10)</label>
+                <input type="text" id="a4-ap4-experiencia" name="a4-ap4-experiencia">
+            </div>
+            <div class="field">
+                <label for="a4-ap4-firmware">Versão do firmware</label>
+                <input type="text" id="a4-ap4-firmware" name="a4-ap4-firmware">
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>5º Andar</h2>
+            <h3>AP 1</h3>
+            <div class="field">
+                <label for="a5-ap1-sinal">Sinal Wifi (dbm)</label>
+                <input type="text" id="a5-ap1-sinal" name="a5-ap1-sinal">
+            </div>
+            <div class="field">
+                <label for="a5-ap1-experiencia">Experiência do ususario (1-10)</label>
+                <input type="text" id="a5-ap1-experiencia" name="a5-ap1-experiencia">
+            </div>
+            <div class="field">
+                <label for="a5-ap1-firmware">Versão do firmware</label>
+                <input type="text" id="a5-ap1-firmware" name="a5-ap1-firmware">
+            </div>
+            <hr>
+            <h3>AP 2</h3>
+            <div class="field">
+                <label for="a5-ap2-sinal">Sinal Wifi (dbm)</label>
+                <input type="text" id="a5-ap2-sinal" name="a5-ap2-sinal">
+            </div>
+            <div class="field">
+                <label for="a5-ap2-experiencia">Experiência do ususario (1-10)</label>
+                <input type="text" id="a5-ap2-experiencia" name="a5-ap2-experiencia">
+            </div>
+            <div class="field">
+                <label for="a5-ap2-firmware">Versão do firmware</label>
+                <input type="text" id="a5-ap2-firmware" name="a5-ap2-firmware">
+            </div>
+            <hr>
+            <h3>AP 3</h3>
+            <div class="field">
+                <label for="a5-ap3-sinal">Sinal Wifi (dbm)</label>
+                <input type="text" id="a5-ap3-sinal" name="a5-ap3-sinal">
+            </div>
+            <div class="field">
+                <label for="a5-ap3-experiencia">Experiência do ususario (1-10)</label>
+                <input type="text" id="a5-ap3-experiencia" name="a5-ap3-experiencia">
+            </div>
+            <div class="field">
+                <label for="a5-ap3-firmware">Versão do firmware</label>
+                <input type="text" id="a5-ap3-firmware" name="a5-ap3-firmware">
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Outras Localizações</h2>
+            <h3>Auditório</h3>
+            <div class="field">
+                <label for="auditorio-sinal">Sinal Wifi (dbm)</label>
+                <input type="text" id="auditorio-sinal" name="auditorio-sinal">
+            </div>
+            <div class="field">
+                <label for="auditorio-experiencia">Experiência do ususario (1-10)</label>
+                <input type="text" id="auditorio-experiencia" name="auditorio-experiencia">
+            </div>
+            <div class="field">
+                <label for="auditorio-firmware">Versão do firmware</label>
+                <input type="text" id="auditorio-firmware" name="auditorio-firmware">
+            </div>
+            <hr>
+            <h3>Recepção</h3>
+            <div class="field">
+                <label for="recepcao-sinal">Sinal Wifi (dbm)</label>
+                <input type="text" id="recepcao-sinal" name="recepcao-sinal">
+            </div>
+            <div class="field">
+                <label for="recepcao-experiencia">Experiência do ususario (1-10)</label>
+                <input type="text" id="recepcao-experiencia" name="recepcao-experiencia">
+            </div>
+            <div class="field">
+                <label for="recepcao-firmware">Versão do firmware</label>
+                <input type="text" id="recepcao-firmware" name="recepcao-firmware">
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Assinatura do Técnico</h2>
+            <div class="field">
+                <label for="analista-nome">Nome do Analista</label>
+                <input type="text" id="analista-nome" name="analista-nome">
+            </div>
+            <p>Use o mouse ou o dedo para assinar no campo abaixo.</p>
+            <canvas id="signature-pad" width="400" height="200"></canvas>
+            <div class="signature-buttons">
+                <button id="clear-signature">Limpar Assinatura</button>
+            </div>
+        </div>
+
+        <div class="button-container">
+            <button onclick="gerarPDF()">Gerar e Salvar PDF</button>
+        </div>
+    </div>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script>
+        const canvas = document.getElementById('signature-pad');
+        const ctx = canvas.getContext('2d');
+        let isDrawing = false;
+        let lastX = 0;
+        let lastY = 0;
+
+        ctx.strokeStyle = '#000';
+        ctx.lineWidth = 2;
+        ctx.lineJoin = 'round';
+        ctx.lineCap = 'round';
+
+        function draw(e) {
+            if (!isDrawing) return;
+            const rect = canvas.getBoundingClientRect();
+            const x = (e.clientX || e.touches[0].clientX) - rect.left;
+            const y = (e.clientY || e.touches[0].clientY) - rect.top;
+
+            ctx.beginPath();
+            ctx.moveTo(lastX, lastY);
+            ctx.lineTo(x, y);
+            ctx.stroke();
+
+            [lastX, lastY] = [x, y];
+        }
+
+        canvas.addEventListener('mousedown', (e) => {
+            isDrawing = true;
+            const rect = canvas.getBoundingClientRect();
+            [lastX, lastY] = [(e.clientX - rect.left), (e.clientY - rect.top)];
+        });
+
+        canvas.addEventListener('touchstart', (e) => {
+            e.preventDefault();
+            isDrawing = true;
+            const rect = canvas.getBoundingClientRect();
+            [lastX, lastY] = [(e.touches[0].clientX - rect.left), (e.touches[0].clientY - rect.top)];
+        });
+
+        canvas.addEventListener('mousemove', draw);
+        canvas.addEventListener('touchmove', draw);
+
+        canvas.addEventListener('mouseup', () => isDrawing = false);
+        canvas.addEventListener('touchend', () => isDrawing = false);
+        canvas.addEventListener('mouseout', () => isDrawing = false);
+
+        document.getElementById('clear-signature').addEventListener('click', () => {
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+        });
+
+        function gerarPDF() {
+            const { jsPDF } = window.jspdf;
+            const doc = new jsPDF();
+            
+            function adicionarCabecalho(doc) {
+                doc.setFontSize(18);
+                doc.text("Formulário de Testes de Wi-Fi", 10, 15);
+                doc.setFontSize(12);
+                doc.setDrawColor(0);
+                doc.line(10, 25, 200, 25);
+            }
+
+            adicionarCabecalho(doc);
+            let y = 30;
+
+            function adicionarSecaoAP(titulo, prefixo) {
+                if (y > 270) {
+                    doc.addPage();
+                    adicionarCabecalho(doc);
+                    y = 30;
+                }
+                
+                doc.setFontSize(14);
+                doc.text(titulo, 15, y);
+                y += 10;
+                
+                doc.setFontSize(12);
+                const sinal = document.getElementById(prefixo + '-sinal').value;
+                const experiencia = document.getElementById(prefixo + '-experiencia').value;
+                const firmware = document.getElementById(prefixo + '-firmware').value;
+                
+                doc.text(`- Sinal Wifi (dbm): ${sinal}`, 20, y);
+                doc.text(`- Experiência do usuário (1-10): ${experiencia}`, 20, y + 6);
+                doc.text(`- Versão do firmware: ${firmware}`, 20, y + 12);
+                y += 22;
+            }
+
+            // 1º Andar
+            doc.text("1º Andar:", 15, y); y += 5;
+            adicionarSecaoAP('AP 1', 'a1-ap1');
+            adicionarSecaoAP('AP 2', 'a1-ap2');
+            adicionarSecaoAP('AP 3', 'a1-ap3');
+            adicionarSecaoAP('AP 4', 'a1-ap4');
+
+            // 2º Andar
+            if (y > 270) { doc.addPage(); adicionarCabecalho(doc); y = 30; }
+            doc.text("2º Andar:", 15, y); y += 5;
+            adicionarSecaoAP('AP 1', 'a2-ap1');
+            adicionarSecaoAP('AP 2', 'a2-ap2');
+            adicionarSecaoAP('AP 3', 'a2-ap3');
+            adicionarSecaoAP('AP 4', 'a2-ap4');
+
+            // 3º Andar
+            if (y > 270) { doc.addPage(); adicionarCabecalho(doc); y = 30; }
+            doc.text("3º Andar:", 15, y); y += 5;
+            adicionarSecaoAP('AP 1', 'a3-ap1');
+            adicionarSecaoAP('AP 2', 'a3-ap2');
+            adicionarSecaoAP('AP 3', 'a3-ap3');
+            adicionarSecaoAP('AP 4', 'a3-ap4');
+
+            // 4º Andar
+            if (y > 270) { doc.addPage(); adicionarCabecalho(doc); y = 30; }
+            doc.text("4º Andar:", 15, y); y += 5;
+            adicionarSecaoAP('AP 1', 'a4-ap1');
+            adicionarSecaoAP('AP 2', 'a4-ap2');
+            adicionarSecaoAP('AP 3', 'a4-ap3');
+            adicionarSecaoAP('AP 4', 'a4-ap4');
+
+            // 5º Andar
+            if (y > 270) { doc.addPage(); adicionarCabecalho(doc); y = 30; }
+            doc.text("5º Andar:", 15, y); y += 5;
+            adicionarSecaoAP('AP 1', 'a5-ap1');
+            adicionarSecaoAP('AP 2', 'a5-ap2');
+            adicionarSecaoAP('AP 3', 'a5-ap3');
+
+            // Outras Localizações
+            if (y > 270) { doc.addPage(); adicionarCabecalho(doc); y = 30; }
+            doc.text("Outras Localizações:", 15, y); y += 5;
+            adicionarSecaoAP('Auditório', 'auditorio');
+            adicionarSecaoAP('Recepção', 'recepcao');
+
+            // Assinatura
+            if (y > 200) {
+                doc.addPage();
+                adicionarCabecalho(doc);
+                y = 30;
+            }
+
+            const nomeAnalista = document.getElementById('analista-nome').value;
+            doc.text(`Nome do Analista: ${nomeAnalista}`, 15, y);
+            y += 10;
+            
+            doc.text("Assinatura do Técnico:", 15, y);
+            y += 5;
+            const imageData = canvas.toDataURL('image/png');
+            doc.addImage(imageData, 'PNG', 20, y, 100, 50);
+
+            doc.save("relatorio-testes-wifi.pdf");
+        }
+    </script>
+</body>
+</html>
