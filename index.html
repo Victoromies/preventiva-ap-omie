@@ -410,6 +410,8 @@
             const doc = new jsPDF();
             
             function adicionarCabecalho(doc) {
+                // Adicionando o logo a partir do URL hospedado no GitHub Pages
+                doc.addImage('https://victoromies.github.io/preventiva-omie/logo.png', 'PNG', 160, 10, 30, 15);
                 doc.setFontSize(18);
                 doc.text("Formulário de Testes de Wi-Fi", 10, 15);
                 doc.setFontSize(12);
@@ -442,14 +444,12 @@
                 y += 22;
             }
 
-            // 1º Andar
             doc.text("1º Andar:", 15, y); y += 5;
             adicionarSecaoAP('AP 1', 'a1-ap1');
             adicionarSecaoAP('AP 2', 'a1-ap2');
             adicionarSecaoAP('AP 3', 'a1-ap3');
             adicionarSecaoAP('AP 4', 'a1-ap4');
 
-            // 2º Andar
             if (y > 270) { doc.addPage(); adicionarCabecalho(doc); y = 30; }
             doc.text("2º Andar:", 15, y); y += 5;
             adicionarSecaoAP('AP 1', 'a2-ap1');
@@ -457,7 +457,6 @@
             adicionarSecaoAP('AP 3', 'a2-ap3');
             adicionarSecaoAP('AP 4', 'a2-ap4');
 
-            // 3º Andar
             if (y > 270) { doc.addPage(); adicionarCabecalho(doc); y = 30; }
             doc.text("3º Andar:", 15, y); y += 5;
             adicionarSecaoAP('AP 1', 'a3-ap1');
@@ -465,7 +464,6 @@
             adicionarSecaoAP('AP 3', 'a3-ap3');
             adicionarSecaoAP('AP 4', 'a3-ap4');
 
-            // 4º Andar
             if (y > 270) { doc.addPage(); adicionarCabecalho(doc); y = 30; }
             doc.text("4º Andar:", 15, y); y += 5;
             adicionarSecaoAP('AP 1', 'a4-ap1');
@@ -473,20 +471,17 @@
             adicionarSecaoAP('AP 3', 'a4-ap3');
             adicionarSecaoAP('AP 4', 'a4-ap4');
 
-            // 5º Andar
             if (y > 270) { doc.addPage(); adicionarCabecalho(doc); y = 30; }
             doc.text("5º Andar:", 15, y); y += 5;
             adicionarSecaoAP('AP 1', 'a5-ap1');
             adicionarSecaoAP('AP 2', 'a5-ap2');
             adicionarSecaoAP('AP 3', 'a5-ap3');
 
-            // Outras Localizações
             if (y > 270) { doc.addPage(); adicionarCabecalho(doc); y = 30; }
             doc.text("Outras Localizações:", 15, y); y += 5;
             adicionarSecaoAP('Auditório', 'auditorio');
             adicionarSecaoAP('Recepção', 'recepcao');
 
-            // Assinatura
             if (y > 200) {
                 doc.addPage();
                 adicionarCabecalho(doc);
